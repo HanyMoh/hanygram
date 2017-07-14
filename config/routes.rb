@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
-  resources :posts
-  root 'posts#index'  
+  devise_for :users, :controllers => { registrations: 'registrations' }
+  resources :posts do
+    resources :comments
+  end
+  root 'posts#index'
 end
