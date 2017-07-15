@@ -134,17 +134,6 @@ body {
   justify-content: center;
 }
 
-/* ## Wrapper and styling for the new and edit views ## */
-
-// .form-wrapper {
-//   width: 60%;
-//   margin: 20px auto;
-//   background-color: #fff;
-//   padding: 40px;
-//   border: 1px solid #eeefef;
-//   border-radius: 3px;
-// }
-
 .edit-links {
   margin-top: 20px;
   margin-bottom: 40px;
@@ -194,4 +183,30 @@ body {
 #post_image {
   padding: 1em;
   margin: 0px auto;
+}
+
+#paginator {
+  color: #4090DB;
+  height: 120px;
+  width: 120px;
+  margin: 60px auto 40px;
+  position: relative;
+  display: table;
+  border: 2px solid #4090DB;
+  border-radius: 50%;
+  :hover {
+    border: 1px solid #2D6DA8;
+    border-radius: 50%;
+  }
+}
+
+#load_more {
+  display: table-cell;
+  font-size: 12px;
+  padding: 0px 9px;
+  vertical-align: middle;
+  text-decoration: none;
+  a :hover {
+    color: #2D6DA8;
+  }
 }
