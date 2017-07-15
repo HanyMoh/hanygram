@@ -1,13 +1,16 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+html {
+  height: 100%;
+}
 body {
+  height: 100%;
   background-color: #fafafa;
   font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
 /* ## NAVBAR CUSTOMISATIONS ## */
-
 .navbar-brand {
   a {
     color: #125688;
@@ -16,15 +19,21 @@ body {
 
 .navbar-default {
   background-color: #fff;
-  height: 54px;
   .navbar-nav li a {
     color: #125688;
   }
 }
 
 .navbar-container {
-  width: 70%;
+  max-width: 640px;
   margin: 0 auto;
+}
+.navbar {
+  margin-bottom: 0px;
+}
+
+.alert {
+  margin-bottom: 0px;
 }
 
 /* ## POST CUSTOMISATIONS ## */
@@ -139,4 +148,50 @@ body {
 .edit-links {
   margin-top: 20px;
   margin-bottom: 40px;
+}
+
+.registration-bg {
+  padding-top: 4em;
+  height: 100%;
+  background-image: url(bkgd.jpg);
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.login-bg {
+  padding-top: 4em;
+  height: 100%;
+  background-image: url(regbackg.jpg);
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.log-in{
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+  border: none;
+}
+
+.panel {
+  border-radius: 8px;
+}
+
+.panel-heading{
+  h1 {
+    text-align: center;
+  }
+}
+
+#image-preview {
+  margin: 0px auto;
+}
+
+#post_image {
+  padding: 1em;
+  margin: 0px auto;
 }
