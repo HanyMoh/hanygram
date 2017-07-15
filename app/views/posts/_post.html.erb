@@ -21,9 +21,14 @@
           </div>
           <%= post.caption %>
         </div>
-        <div id='comments_<%= post.id %>'>
-          <% if post.comments %>
-            <%= render post.comments, post: post %>
+        <div id='comments_<%= post.id %>' class="comments">
+          <% if post.comments.any? %>
+          <div id="comments-paginator-<%= post.id %>" class="paginator">
+            <% unless post.comments.count <= 4 %>
+              <%= link_to "view all #{post.comments.count} comments", post_comments_path(post), remote: true, class: 'more-comments', data: {post_id: "#{post.id}", type: "html"} %>
+            <% end %>
+          </div>
+            <%= render post.comments.last(4), post: post %>
           <% end %>
       </div>
       </div>
