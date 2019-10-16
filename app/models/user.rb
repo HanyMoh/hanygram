@@ -1,7 +1,7 @@
 class User < ApplicationRecord
 
   acts_as_voter
-  has_one_attached :avatar
+  has_attached_file :avatar
 
   has_many :posts, dependent: :destroy
   has_many :comments, dependent: :destroy
